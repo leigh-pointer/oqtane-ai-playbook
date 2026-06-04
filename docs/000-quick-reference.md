@@ -1,4 +1,4 @@
-﻿# Quick Reference - What This Playbook Stops AI From Doing
+# Quick Reference - What This Playbook Stops AI From Doing
 
 This card lists the **top rejection rules** from the Oqtane AI Playbook in plain language.
 
@@ -103,6 +103,7 @@ If AI-generated code violates any of these, **reject it immediately.**
 | Error handling | `015-Error-Handling.md` | `027x-error-handling.md` |
 | Packaging | `020-packaging-and-dependencies.md` | `027x-packaging-and-dependencies.md` |
 | Client/server boundaries | `017-Client-Server-Responsibility-Boundaries.md` | `027x-execution-parity.md` |
+| Caching | `035-caching.md` | `027x-caching.md` |
 
 ---
 
