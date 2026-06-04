@@ -173,6 +173,8 @@ Site Tasks must not be implemented in Oqtane versions earlier than 10.1.
 - **027x-javascript-usage.md**
 JavaScript must not be introduced unless a Blazor based C# solution is demonstrably insufficient.  
 Opt in, not default.  
+- **027x-caching.md**
+Governance for caching implementations. Requires use of `CacheManager` in Oqtane 10.2+ and forbids direct use of `IMemoryCache` to ensure multi-tenant safety.
 
 ---
 
@@ -300,3 +302,4 @@ When the user intent matches a description below, automatically load and follow 
 - **Handle file uploads or manage media** -> `docs/prompts/file-uploads.md`
 - **Make the module searchable or implement ISearchable** -> `docs/prompts/search-indexing.md`
 - **Add custom JavaScript or CSS resources** -> `docs/prompts/javascript-interop.md`
+- **Implement or modify caching logic** -> `docs/prompts/caching.md`

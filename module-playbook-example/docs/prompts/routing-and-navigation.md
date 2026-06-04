@@ -7,8 +7,9 @@
 Oqtane uses a dynamic routing model driven by the database, not standard Blazor `@page` directives. 
 You MUST adhere to the following rules when implementing navigation:
 
-### 1. No Standard Blazor Routing
-- Do NOT use the `@page "/some/route"` directive in components.
+### 1. Blazor Routing Constraints
+- In Oqtane versions < 10.1.0, do NOT use the `@page "/some/route"` directive in components.
+- In Oqtane versions >= 10.1.0, `@page` and `@attribute` are supported and may specify aliases and page order. However, for module-specific views, dynamic routing via `ActionLink` remains the primary pattern unless explicitly defining a standalone route.
 - Do NOT use `<a href="/some/route">` with hardcoded URL paths.
 - Do NOT use `NavigationManager.NavigateTo("/some/route")` with hardcoded strings.
 
