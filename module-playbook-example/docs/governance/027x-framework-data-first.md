@@ -86,6 +86,7 @@ Known Oqtane framework services include but are not limited to:
 | Modules | `IModuleService` |
 | Files | `IFileService` |
 | Folders | `IFolderService` |
+| Folder storage backend (Oqtane 10.3.0+) | `IStorageProvider` (version-gated; see `027x-folder-storage-providers.md`) |
 | Settings | `ISettingService` |
 | Notifications | `INotificationService` |
 | Jobs | `IJobService` |

@@ -104,6 +104,7 @@ If AI-generated code violates any of these, **reject it immediately.**
 | Packaging | `020-packaging-and-dependencies.md` | `027x-packaging-and-dependencies.md` |
 | Client/server boundaries | `017-Client-Server-Responsibility-Boundaries.md` | `027x-execution-parity.md` |
 | Caching | `035-caching.md` | `027x-caching.md` |
+| File and folder storage | `036-folder-storage-providers.md` | `027x-folder-storage-providers.md` |
 
 ---
 

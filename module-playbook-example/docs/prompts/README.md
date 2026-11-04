@@ -17,6 +17,9 @@ These prompts are **operational tools**, not documentation.
 
 ## Available Prompts
 
+- `file-uploads.md`: Use Oqtane file/folder services for module uploads and media.
+- `folder-storage-providers.md`: Implement a custom folder storage backend on Oqtane 10.3.0+ after verifying the target version.
+
 - `authorization.md`: For authorization logic (controllers, APIs, UI).
 - `concurrency.md`: For generating Repository Update/Delete methods properly.
 - `create-module-instructions.md`: Scaffold rules for AI to create new modules.

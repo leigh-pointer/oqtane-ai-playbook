@@ -61,6 +61,8 @@ AI MUST evaluate existing Oqtane services including:
 Existing services MUST be used instead of custom implementations.
 AI MUST NOT reinvent file management, logging, or authorization under any circumstances.
 
+**Storage version distinction:** `IFileService` / `IFolderService` are the module-facing file APIs. When a user explicitly requests a storage backend, AI MUST also check the target version and apply `027x-folder-storage-providers.md`: Oqtane 10.3.0+ provides `IStorageProvider`; earlier versions do not. The prohibition on parallel file systems does not prohibit this framework extension on supported versions.
+
 ---
 
 ### 4. Existing Module Patterns and Built-in Modules
