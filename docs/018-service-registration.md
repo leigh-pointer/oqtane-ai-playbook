@@ -1,4 +1,4 @@
-﻿# 018 - Service Registration and Module Startup
+# 018 - Service Registration and Module Startup
 
 ## Problem
 
@@ -41,7 +41,7 @@ These extension points are:
 - Isolated
 - Independently executed
 
-They are the **only supported locations** for module-level service registration.
+They are the supported extension points for module-owned service registration. Framework-discovered extension contracts may have their own registration lifecycle; follow their indexed, version-specific rules.
 
 ---
 
@@ -102,6 +102,10 @@ public class ServerStartup : IServerStartup
 ```
 
 Middleware registered here participates in the host pipeline under Oqtane’s control.
+
+### Framework-discovered storage providers (Oqtane 10.3.0+)
+
+`IStorageProvider` implementations are discovered from loaded Oqtane assemblies and registered as scoped providers by the framework. A provider itself does not need duplicate registration in `IServerStartup`. This exception applies only to the provider contract; auxiliary module services still follow the startup rules. Verify the target version before using this contract. Earlier versions do not expose this 10.3 provider extension point.
 
 ---
 

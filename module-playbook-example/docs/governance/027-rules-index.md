@@ -126,6 +126,8 @@ AI must NOT:
 Enforces validation against Oqtane framework patterns and prohibits invention.
 - **027x-capability-discovery.md**
 Mandatory rule requiring AI to discover and reuse existing Oqtane capabilities before creating new functionality. Prevents duplication of base class features, state handling, services, and framework behavior.
+- **027x-folder-storage-providers.md**
+Version-aware rules for Oqtane file storage: `IStorageProvider` is supported on 10.3.0+ only; older targets must use their existing APIs.
 - **027x-ai-instruction-discovery.md**
 Governs how the AI should discover instructions.
 - **027x-ai-decision-timeline.md**
